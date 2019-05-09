@@ -1,0 +1,5 @@
+antti@apranipryla:~/development/devops/part-1$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+12def9377d18        nginx               "nginx -g 'daemon of…"   49 seconds ago      Exited (0) 18 seconds ago                       awesome_germain
+b90afb442ebc        nginx               "nginx -g 'daemon of…"   52 seconds ago      Exited (0) 13 seconds ago                       brave_benz
+650e9b3da482        nginx               "nginx -g 'daemon of…"   54 seconds ago      Up 53 seconds               80/tcp              eloquent_jang

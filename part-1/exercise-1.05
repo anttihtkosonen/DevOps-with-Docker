@@ -1,0 +1,28 @@
+antti@apranipryla:~/development/devops/part-1$ docker run -dit ubuntu
+b43f83771a0abef30d1e7a93fa62819c53ef577e0f802893845a0f187a4dee62
+antti@apranipryla:~/development/devops/part-1$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+b43f83771a0a        ubuntu              "/bin/bash"         6 seconds ago       Up 4 seconds                            practical_pike
+antti@apranipryla:~/development/devops/part-1$ docker attach --sig-proxy=false practical_pike
+root@b43f83771a0a:/# apt-get update
+
+...
+
+root@b43f83771a0a:/# apt install curl
+
+...
+
+root@b43f83771a0a:/# read escape sequence
+antti@apranipryla:~/development/devops/part-1$ docker exec -it practical_pike sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+antti@apranipryla:~/development/devops/part-1$ 
+

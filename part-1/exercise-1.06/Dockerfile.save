@@ -1,0 +1,3 @@
+FROM devo
+psdockeruh/overwrite_cmd_exercise
+CMD start --clock now

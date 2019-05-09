@@ -1,0 +1,11 @@
+Repository for exercise 1.15 of DevOps with Docker.
+
+Made from an exercise project for another course: https://github.com/anttihtkosonen/full-stack-open-2018/tree/master/osa2/teht_2.12-2.13
+
+To use this image run these commands:
+
+1) Docker pull anttikosonen/exercise-1.15
+2) docker run -p 3000:3000 anttikosonen/exercise-1.15
+
+After that you can use the application at: http://localhost:3000
+

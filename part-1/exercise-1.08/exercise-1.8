@@ -1,0 +1,13 @@
+antti@apranipryla:~/development/devops/part-1/exercise-1.8$ touch logs.txt
+antti@apranipryla:~/development/devops/part-1/exercise-1.8$ docker run -v $(pwd)/logs.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise 
+(node:1) ExperimentalWarning: The fs.promises API is experimental
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+^CClosing file
+^Cantti@apranipryla:~/development/devops/part-1/exercise-1.8$ cat logs.txt 
+Wed, 08 May 2019 14:59:55 GMT
+Wed, 08 May 2019 14:59:58 GMT
+Wed, 08 May 2019 15:00:01 GMT
+antti@apranipryla:~/development/devops/part-1/exercise-1.8$ 
+

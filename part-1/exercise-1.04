@@ -1,0 +1,22 @@
+antti@apranipryla:~/development/devops/part-1$ docker run -d devopsdockeruh/exec_bash_exercise
+4ff3453ad72bc0f4a7ba86d6424b2429ec788e308188a3e745a4485ff977c491
+antti@apranipryla:~/development/devops/part-1$ docker ps
+CONTAINER ID        IMAGE                               COMMAND             CREATED             STATUS              PORTS               NAMES
+4ff3453ad72b        devopsdockeruh/exec_bash_exercise   "node index"        19 seconds ago      Up 18 seconds                           fervent_edison
+antti@apranipryla:~/development/devops/part-1$ docker exec -it fervent_edison bash
+root@4ff3453ad72b:/usr/app# tail -f ./logs.txt
+Sun, 05 May 2019 13:30:51 GMT
+Secret message is:
+"Docker is easy"
+Sun, 05 May 2019 13:30:57 GMT
+Sun, 05 May 2019 13:31:00 GMT
+Sun, 05 May 2019 13:31:03 GMT
+Sun, 05 May 2019 13:31:06 GMT
+Secret message is:
+"Docker is easy"
+Sun, 05 May 2019 13:31:12 GMT
+Sun, 05 May 2019 13:31:15 GMT
+^C
+root@4ff3453ad72b:/usr/app# exit
+exit
+
