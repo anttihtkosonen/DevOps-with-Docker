@@ -9,3 +9,6 @@ To use this image run these commands:
 
 After that you can use the application at: http://localhost:3000
 
+
+The exercise is available at:
+https://cloud.docker.com/repository/docker/anttikosonen/exercise-1.15

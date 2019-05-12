@@ -1,0 +1,16 @@
+For this assignment I created an environment for the python3 environment, with data-analysis tools. I based it on the debian image and added the following tools and libraries 
+
+-Python 3
+-Pip for installing python modules
+-build-essential, libssl-dev, libffi-dev and python-dev -libraries
+-numpy, scipy, matplotlib, ipython, jupyter, pandas, sympy and nos -tools
+-wget and curl for operations online
+-git for version control
+-heroku for deployment
+-even though no editor was required, I also added vim, since it is useful to have some kind of editor available
+
+To run the application, execute the following command, which starts the command line of the container:
+docker run -it anttikosonen/exercise-1.17
+
+The container is available at:
+https://cloud.docker.com/repository/registry-1.docker.io/anttikosonen/exercise-1.17
