@@ -1,4 +1,4 @@
-For this assignment I created an environment for the python3 environment, with data-analysis tools. I based it on the debian image and added the following tools and libraries 
+For this assignment I created an environment for the python3 environment: with data-analysis tools. I based it on the debian image and added the following tools and libraries:
 
 -Python 3
 -Pip for installing python modules

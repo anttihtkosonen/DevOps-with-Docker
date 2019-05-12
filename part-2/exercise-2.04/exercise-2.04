@@ -1,0 +1,1 @@
+antti@apranipryla:~/development/devops/part-2/exercise-2.04/scaling-exercise$ docker-compose up --scale compute=2
