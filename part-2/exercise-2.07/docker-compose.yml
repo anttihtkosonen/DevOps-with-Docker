@@ -1,0 +1,28 @@
+version: '3.5'
+services:
+
+  mopo-backend:
+    image: "mopo-backend"
+    ports:
+      - 5000:5000
+    volumes:
+      - model:/src/model
+    depends_on:
+      - mopo-training
+
+  mopo-frontend:
+    image: "mopo-frontend"
+    ports:
+      - 3000:3000
+
+
+  mopo-training:
+    image: "mopo-training"
+    volumes:
+      - model:/src/model
+      - imgs:/src/imgs
+
+volumes:
+  model:
+  imgs:
+

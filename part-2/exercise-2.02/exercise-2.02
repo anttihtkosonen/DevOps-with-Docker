@@ -1,0 +1,2 @@
+antti@apranipryla:~/development/devops/part-2/exercise-2.02$ docker pull devopsdockeruh/ports_exercise
+antti@apranipryla:~/development/devops/part-2/exercise-2.02$ docker-compose up

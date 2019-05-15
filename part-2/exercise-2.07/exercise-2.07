@@ -1,0 +1,7 @@
+git clone https://github.com/docker-hy/ml-kurkkumopo-backend
+docker build -t mopo-backend .
+git clone https://github.com/docker-hy/ml-kurkkumopo-training
+docker build -t mopo-training .
+git clone https://github.com/docker-hy/ml-kurkkumopo-frontend
+docker build -t mopo-frontend .
+docker-compose up

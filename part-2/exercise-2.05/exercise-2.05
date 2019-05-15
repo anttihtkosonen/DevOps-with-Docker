@@ -1,0 +1,2 @@
+antti@apranipryla:~/development/devops/part-2/exercise-2.05$ docker pull redis
+antti@apranipryla:~/development/devops/part-2/exercise-2.05$ docker-compose up

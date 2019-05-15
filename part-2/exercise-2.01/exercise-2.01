@@ -1,0 +1,2 @@
+antti@apranipryla:~/development/devops/part-2/exercise-2.01$ touch logs.txt
+antti@apranipryla:~/development/devops/part-2/exercise-2.01$ docker-compose up
