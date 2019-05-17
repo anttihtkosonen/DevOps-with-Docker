@@ -1,0 +1,7 @@
+antti@apranipryla:~/development/devops/part-2/exercise-2.09$ docker-compose up
+antti@apranipryla:~/development/devops/part-2/exercise-2.09$ docker-compose down
+antti@apranipryla:~/development/devops/part-2/exercise-2.09$ docker-compose up
+antti@apranipryla:~/development/devops/part-2/exercise-2.09$ rm -r database/
+antti@apranipryla:~/development/devops/part-2/exercise-2.09$ docker-compose up
+
+

@@ -1,0 +1,53 @@
+version: '3.5' 
+
+services: 
+
+    backend: 
+      image: ex112back
+      build: . 
+      ports: 
+        - 8000:8000
+      environment: 
+        - REDIS=redis
+        - DB_USERNAME=postgres
+        - DB_PASSWORD=hunter2
+        - DB_HOST=postgres
+      restart: unless-stopped
+
+    frontend:
+      image: ex112front
+      build: .
+      ports:
+        - 5000:5000
+      environment:
+        - API_URL=/api/
+
+
+    redis:
+      image: redis
+      build: .
+      ports:
+        - 6379:6379
+
+    postgres:
+      image: postgres
+      build: .
+      environment:
+        - POSTGRES_PASSWORD=hunter2
+      volumes:
+        - database:/var/lib/postgresql/data
+
+
+    nginx:
+      image: "nginx"
+      ports:
+        - 80:80
+      depends_on:
+        - frontend
+        - backend
+      volumes:
+        - ./nginx.conf:/etc/nginx/nginx.conf
+
+
+volumes:
+  database:
