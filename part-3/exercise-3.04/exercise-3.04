@@ -1,0 +1,7 @@
+Sizes before:
+frontend: 608MB
+backend: 501MB
+
+Sizes with alpine
+frontend: 216MB
+backend: 120MB

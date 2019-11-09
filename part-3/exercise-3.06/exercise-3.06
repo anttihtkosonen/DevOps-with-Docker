@@ -1,0 +1,10 @@
+I used the dockerfile from exercise 1.17. Size before optimization was 1.22BG
+
+For size optimization I changed the base to be node:alpine instead of Debian. I installed the apk-packages with
+the --no-cache flag to save space, and also most packages with --virtual .build-deps, so that after installing
+the pip-packages they are deleted. Size after optimization was 832 MB
+
+Changing from Debian to Alpine was not that simple - many additional packages needed to be installed, which
+were installed by default with Debian.
+
+For security I added a normal user, and the docker is started as that user by default. 

@@ -1,0 +1,8 @@
+Before:
+frontend: 676MB
+backend: 569MB
+
+
+After slimming:
+frontend: 608MB
+backend: 501MB

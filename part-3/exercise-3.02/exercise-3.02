@@ -1,0 +1,6 @@
+antti@apranipryla:~/development/devops/part-3/exercise-3.02$ docker build -t yle-dl .  
+antti@apranipryla:~/development/devops/part-3/exercise-3.02$ docker run -v "$(pwd)":/video yle-dl https://areena.yle.fi/1-376982 
+antti@apranipryla:~/development/devops/part-3/exercise-3.02$ ls
+Dockerfile  exercise-3.02  Rikostarinoita Suomesta: Oulun kaksoissurma-2018-11-29T00:02.mkv
+
+

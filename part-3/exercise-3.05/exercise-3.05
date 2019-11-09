@@ -1,0 +1,5 @@
+antti@apranipryla:~/development/devops/part-3/exercise-3.05$ docker build -t frontend .
+antti@apranipryla:~/development/devops/part-3/exercise-3.05$ docker images                │                                                                                        
+REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE                │                                                                                        
+<none>              <none>              ecdd7af9bbf5        About a minute ago   112MB         
+antti@apranipryla:~/development/devops/part-3/exercise-3.05$ docker run -p 5000:5000 frontend

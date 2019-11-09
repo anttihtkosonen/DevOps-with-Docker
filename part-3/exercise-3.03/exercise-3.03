@@ -1,0 +1,5 @@
+antti@apranipryla:~/development/devops/part-3/exercise-3.03/frontend$ docker build -t frontend .
+antti@apranipryla:~/development/devops/part-3/exercise-3.03/frontend$ docker run frontend
+
+antti@apranipryla:~/development/devops/part-3/exercise-3.03/backend$ docker build -t backend .  
+antti@apranipryla:~/development/devops/part-3/exercise-3.03/backend$ docker run backend
