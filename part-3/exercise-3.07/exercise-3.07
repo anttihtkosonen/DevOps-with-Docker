@@ -1,0 +1,7 @@
+Kubernetes (K8s) - like any orchestration tool - has its best use in cases where a large number of containers need to be maintained over several hosts. It gives a single interface that can be used to deploy containers on all kinds of hosts - both on cloud services and on physical machines.
+
+K8s scales the number of containers to match workloads and downtime - in case a physical host goes down, or the workload increases, K8s automatically starts new containers on hosts that are best suited to provide the necessary service. Without an orchestration tool like K8s changes like these would need to be done manually. 
+
+K8s is also great for microservice architectures. When services are broken down into small specialized pieces - usually run in their own containers - the number of containers becomes large, and the management overhead increases. This calls for the kind of automation provided by K8s.
+
+K8s is mainly used by large enterprises - the advantages of the automation need to outweight the increased maintenance overhead. Therefore small cloud services are better off with simpler automation tools - like Docker Swarm - for container management. For example, maintaining a single web application with kubernetes is overkill. But when several different apps are maintained, and their workloads change over time, then orchestration with a tool like K8s is called for.
